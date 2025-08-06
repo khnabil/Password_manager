@@ -1,5 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:pass_vault_app/models/credential.dart';
+import 'package:Password_manager/models/credential.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 class CredentialController with ChangeNotifier {

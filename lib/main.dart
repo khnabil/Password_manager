@@ -3,10 +3,10 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:provider/provider.dart';
 
 // Import our updated custom components and controllers
-import 'package:pass_vault_app/controlers/auth_controller.dart';
-import 'package:pass_vault_app/models/auth_repository.dart';
-import 'package:pass_vault_app/models/credential.dart';
-import 'package:pass_vault_app/views/screens/login_screen.dart';
+import 'package:Password_manager/controlers/auth_controller.dart';
+import 'package:Password_manager/models/auth_repository.dart';
+import 'package:Password_manager/models/credential.dart';
+import 'package:Password_manager/views/screens/login_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

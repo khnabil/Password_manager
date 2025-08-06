@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 // Corrected the import path to match your folder structure
-import 'package:pass_vault_app/controlers/auth_controller.dart';
-import 'package:pass_vault_app/views/screens/home_screen.dart';
+import 'package:Password_manager/controlers/auth_controller.dart';
+import 'package:Password_manager/views/screens/home_screen.dart';
 
 class LoginScreenWithUsername extends StatefulWidget {
   const LoginScreenWithUsername({super.key});

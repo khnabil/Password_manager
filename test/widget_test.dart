@@ -8,7 +8,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:pass_vault_app/main.dart'; // Import our main app file
+import 'package:Password_manager/main.dart'; // Import our main app file
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

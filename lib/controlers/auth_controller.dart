@@ -1,7 +1,7 @@
 // lib/controlers/auth_controller.dart
 
 import 'package:flutter/foundation.dart';
-import 'package:pass_vault_app/models/auth_repository.dart'; // Corrected import path
+import 'package:Password_manager/models/auth_repository.dart'; // Corrected import path
 
 class AuthController with ChangeNotifier {
   final AuthRepository _authRepository;

@@ -1,6 +1,6 @@
 {
-    "name": "pass_vault_app",
-    "short_name": "pass_vault_app",
+    "name": "Password_manager",
+    "short_name": "Password_manager",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

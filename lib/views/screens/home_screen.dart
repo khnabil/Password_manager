@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:pass_vault_app/controlers/credential_controller.dart';
-import 'package:pass_vault_app/models/credential.dart';
+import 'package:Password_manager/controlers/credential_controller.dart';
+import 'package:Password_manager/models/credential.dart';
 
 class HomeScreen extends StatelessWidget {
   final String username;
@@ -14,9 +14,7 @@ class HomeScreen extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => CredentialController(username),
       child: Scaffold(
-        appBar: AppBar(
-          title: Text('$username\'s Passwords'),
-        ),
+        appBar: AppBar(title: Text('$username\'s Passwords')),
         body: Consumer<CredentialController>(
           builder: (context, controller, child) {
             if (controller.credentials.isEmpty) {
@@ -35,7 +33,9 @@ class HomeScreen extends StatelessWidget {
                 final credential = controller.credentials[index];
                 return Card(
                   margin: const EdgeInsets.symmetric(
-                      horizontal: 8.0, vertical: 4.0),
+                    horizontal: 8.0,
+                    vertical: 4.0,
+                  ),
                   child: ListTile(
                     title: Text(credential.website),
                     subtitle: Text(credential.username),
@@ -105,8 +105,10 @@ class HomeScreen extends StatelessWidget {
                   username: usernameController.text,
                   password: passwordController.text,
                 );
-                Provider.of<CredentialController>(context, listen: false)
-                    .addCredential(newCredential);
+                Provider.of<CredentialController>(
+                  context,
+                  listen: false,
+                ).addCredential(newCredential);
                 Navigator.of(context).pop();
               },
               child: const Text('Add'),
